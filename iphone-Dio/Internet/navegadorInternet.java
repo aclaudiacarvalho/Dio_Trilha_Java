@@ -1,4 +1,6 @@
-public interface NavegadorInternet {
+package internet;
+
+public interface navegadorInternet {
 
     public void pagina();
     public void adicionandoNovaPagina();

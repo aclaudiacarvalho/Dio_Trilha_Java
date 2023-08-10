@@ -1,4 +1,6 @@
-public class Musica implements ReproduzirMusica {
+package musica;
+
+public class musica implements tocadorMusica {
     @Override
     public void tocar() {
         System.out.println("Tocando musica");

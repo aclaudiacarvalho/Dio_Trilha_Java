@@ -1,4 +1,7 @@
-public class Telefone implements TelefoneIphone{
+package telefone;
+
+
+public class telefone implements telefoneIphone {
 
     @Override
     public void ligar() {

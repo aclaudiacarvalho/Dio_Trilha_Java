@@ -1,27 +1,35 @@
-public class Fabrica {
+package fabrica;
+
+import internet.navegadorInternet;
+import telefone.telefoneIphone;
+import musica.tocadorMusica;
+import iphone.iphone;
+
+public class fabrica {
     public static void main(String[] args) {
-        EquipamentoIphone iphone = new EquipamentoIphone();
-
-        ReproduzirMusica musica = iphone;
-        AparelhoTelefonico telefonico = iphone;
-        NavegadorInternet internet = iphone;
+        iphone iphone = new iphone();
 
 
-        System.out.println("Musica");
+        tocadorMusica musica = iphone;
+        telefoneIphone telefonico = iphone;
+        navegadorInternet internet = iphone;
+
+
+        System.out.println("musica.Musica");
         musica.selecionarMusica();
         musica.tocar();
         musica.pausar();
         System.out.println("*****************************************************");
 
 
-        System.out.println("Telefone");
+        System.out.println("telefone.Telefone");
         telefonico.ligar();
         telefonico.atender();
         telefonico.iniciarCorreioVoz();
 
 
         System.out.println("******************************************************");
-        System.out.println("Internet");
+        System.out.println("internet.Internet");
         internet.pagina();
         internet.adicionandoNovaPagina();
         internet.atualizaPagina();

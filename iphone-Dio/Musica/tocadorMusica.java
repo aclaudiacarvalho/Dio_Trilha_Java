@@ -1,3 +1,5 @@
+package musica;
+
 public interface tocadorMusica {
 
     public void tocar();

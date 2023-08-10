@@ -1,4 +1,6 @@
-public class Internet implements NavegadorInternet{
+package internet;
+
+public class internet implements navegadorInternet {
     @Override
     public void pagina() {
         System.out.println("Pagina Aberta");
